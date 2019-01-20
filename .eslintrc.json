@@ -1,0 +1,13 @@
+{
+  "extends": "standard",
+  "globals": {
+    "test": true,
+    "expect": true
+  },
+  "rules": {
+    "indent": "off",
+    "quotes": "off",
+    "semi": "off",
+    "space-before-function-paren": "off"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "javascript-jest",
+  "description": "skeleton for Node.js + Jest users.",
+  "version": "0.1.0",
+  "author": {
+    "name": "TDDBC and other contributors"
+  },
+  "bugs": {
+    "url": "https://github.com/tddbc/javascript-jest/issues"
+  },
+  "homepage": "https://github.com/tddbc/javascript-jest",
+  "keywords": [
+    "TDDBC",
+    "jest",
+    "esm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tddbc/javascript-jest.git"
+  },
+  "scripts": {
+    "js": "node main.js",
+    "mjs": "node --experimental-modules main.mjs",
+    "fmt": "prettier --write *js *.json lib/*js",
+    "lint": "eslint main.js main.mjs lib/*js",
+    "pretest": "npm run fmt && npm run lint",
+    "test": "npm run test:js && npm run test:mjs",
+    "test:js": "jest --config jest_js.config.js",
+    "test:mjs": "jest --config jest_mjs.config.js",
+    "watch:js": "npm run test:js -- --watch",
+    "watch:mjs": "npm run test:mjs --  --watch"
+  },
+  "main": "main.mjs",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "esm": "^3.1.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "rewire": "^4.0.1"
+  }
+}
