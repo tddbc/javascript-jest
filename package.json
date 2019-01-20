@@ -23,8 +23,9 @@
     "js": "node main.js",
     "mjs": "node --experimental-modules main.mjs",
     "fmt": "prettier --write *js *.json lib/*js",
+    "fmt:check": "prettier --check *js *.json lib/*js",
     "lint": "eslint main.js main.mjs lib/*js",
-    "pretest": "npm run fmt && npm run lint",
+    "pretest": "npm run fmt:check && npm run lint",
     "test": "npm run test:js && npm run test:mjs",
     "test:js": "jest --config jest_js.config.js",
     "test:mjs": "jest --config jest_mjs.config.js",
@@ -41,7 +42,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "esm": "^3.1.2",
     "jest": "^23.6.0",
-    "prettier": "^1.15.3",
+    "prettier": "^1.16.0",
     "rewire": "^4.0.1"
   }
 }
