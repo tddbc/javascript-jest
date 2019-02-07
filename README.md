@@ -11,7 +11,7 @@
 $ git clone https://github.com/tddbc/javascript-jest.git
 $ cd javascript-jest
 $ npm install
-$ npm run test
+$ npm test
 
 > javascript-jest@0.1.0 pretest /Users/dictav/golang/src/github.com/dictav/javascript-jest
 > npm run fmt && npm run lint
