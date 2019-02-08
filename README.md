@@ -11,7 +11,7 @@
 $ git clone https://github.com/tddbc/javascript-jest.git
 $ cd javascript-jest
 $ npm install
-$ npm run test:test
+$ npm test
 
 > javascript-jest@0.1.0 pretest /Users/dictav/golang/src/github.com/dictav/javascript-jest
 > npm run fmt && npm run lint
@@ -56,8 +56,8 @@ Ran all test suites.
 | コマンド            | 内容                                                       |
 |:--------------------|:-----------------------------------------------------------|
 | `npm test`          | lint とテストをまとめて行います                            |
-| `npm test:js`       | CommonJS の実装のテストを行います                          |
-| `npm test:mjs`      | ES Module の実装のテストを行います                         |
+| `npm run test:js`   | CommonJS の実装のテストを行います                          |
+| `npm run test:mjs`  | ES Module の実装のテストを行います                         |
 | `npm run fmt`       | コードの整形を行います                                     |
 | `npm run lint`      | コードの静的検証を行います                                 |
 | `npm run watch:js`  | ファイル変更を監視し、変更があったらテストを自動で行います |
