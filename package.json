@@ -34,6 +34,7 @@
   },
   "main": "main.mjs",
   "devDependencies": {
+    "acorn": "^7.1.0",
     "eslint": "^5.12.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -44,8 +45,5 @@
     "jest": "^24.0.0",
     "prettier": "^1.16.0",
     "rewire": "^4.0.1"
-  },
-  "dependencies": {
-    "acorn": "^7.1.0"
   }
 }
