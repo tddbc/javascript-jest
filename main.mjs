@@ -1,4 +1,4 @@
 import Sample from "./lib/sample";
 
-let sample = new Sample(console.log);
+const sample = new Sample(console.log);
 sample.say();
