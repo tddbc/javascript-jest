@@ -1,12 +1,13 @@
-// For a detailed explanation regarding each configuration property, visit:
-// https://jestjs.io/docs/en/configuration.html
+/** @type {import('jest').Config} */
 
-module.exports = {
+const config = {
   testEnvironment: "node",
   testRegex: ".*_test\\.mjs$",
   transform: {
-    ".*\\.mjs$": "babel-jest"
+    "\\.mjs$": "babel-jest"
   },
   transformIgnorePatterns: ["/node_modules/"],
   moduleFileExtensions: ["js", "json", "jsx", "node", "mjs"]
 };
+
+module.exports = config;
