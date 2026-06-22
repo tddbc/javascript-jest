@@ -34,7 +34,7 @@
   },
   "main": "main.mjs",
   "devDependencies": {
-    "@babel/core": "^7.15.5",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.15.6",
     "acorn": "^7.1.1",
     "babel-jest": "^29.6.1",
