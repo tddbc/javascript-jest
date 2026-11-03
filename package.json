@@ -43,5 +43,10 @@
     "neostandard": "^0.13.0",
     "prettier": "^1.19.1",
     "rewire": "^9.0.1"
+  },
+  "overrides": {
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "^4.1.0"
+    }
   }
 }
